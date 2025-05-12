@@ -14,10 +14,10 @@ public class LoginScreen implements Screen {
     public void render() {
         System.out.println("=== Login ===");
 
-        System.out.print("Email: ");
+        System.out.print("Email    : ");
         String email = scanner.nextLine();
 
-        System.out.print("Password: ");
+        System.out.print("Password : ");
         String password = scanner.nextLine();
 
         boolean result = userService.login(email, password);

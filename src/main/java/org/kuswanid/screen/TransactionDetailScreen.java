@@ -29,11 +29,11 @@ public class TransactionDetailScreen implements Screen {
         Customer customer = customerService.getCustomerDetail(transaction.getCustomerId());
         Property property = propertyService.getPropertyDetail(transaction.getPropertyId());
 
-        System.out.println(property.getName());
-        System.out.println(customer.getName());
-        System.out.println("Duration: " + transaction.getDuration() + " days");
-        System.out.println("Rp" + new DecimalFormat("#").format(transaction.getTotalPrice()));
-        System.out.println("Status: " + transaction.getStatus());
+        System.out.println("Property    : " + property.getName());
+        System.out.println("Customer    : " + customer.getName());
+        System.out.println("Duration    : " + transaction.getDuration() + " days");
+        System.out.println("Total Price : Rp" + new DecimalFormat("#").format(transaction.getTotalPrice()));
+        System.out.println("Status      : " + transaction.getStatus());
 
         System.out.println();
         if (transaction.getStatus().equals("rented")) {

@@ -25,12 +25,12 @@ public class Navigator {
         destination.render();
     }
 
-   public static void refresh() {
+    public static void refresh() {
         if (!history.isEmpty()) {
             System.out.println();
             history.peek().render();
         }
-   }
+    }
 
     public static void replace(Screen destination) {
         if (!history.isEmpty()) {

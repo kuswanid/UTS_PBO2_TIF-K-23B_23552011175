@@ -18,10 +18,10 @@ public class CustomerDetailScreen implements Screen {
         System.out.println("=== Customer Detail ===");
 
         Customer customer = customerService.getCustomerDetail(id);
-        System.out.println(customer.getName());
-        System.out.println(customer.getEmail());
-        System.out.println(customer.getPhone());
-        System.out.println(customer.getAddress());
+        System.out.println("Name    : " + customer.getName());
+        System.out.println("Email   : " + customer.getEmail());
+        System.out.println("Phone   : " + customer.getPhone());
+        System.out.println("Address : " + customer.getAddress());
 
         System.out.println();
         System.out.println("1. Edit customer");
@@ -36,7 +36,7 @@ public class CustomerDetailScreen implements Screen {
                 Navigator.go(new EditCustomerScreen(id));
                 break;
             }
-            case 2:{
+            case 2: {
                 boolean result = customerService.deleteCustomer(id);
                 if (result) {
                     System.out.println("Customer deleted");

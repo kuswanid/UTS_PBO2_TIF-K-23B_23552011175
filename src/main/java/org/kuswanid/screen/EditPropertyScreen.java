@@ -66,6 +66,5 @@ public class EditPropertyScreen implements Screen {
 
     @Override
     public void onInput(int input) {
-
     }
 }

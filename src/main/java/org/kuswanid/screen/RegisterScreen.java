@@ -14,13 +14,13 @@ public class RegisterScreen implements Screen {
     public void render() {
         System.out.println("=== Register ===");
 
-        System.out.print("Name: ");
+        System.out.print("Name     : ");
         String name = scanner.nextLine();
 
-        System.out.print("Email: ");
+        System.out.print("Email    : ");
         String email = scanner.nextLine();
 
-        System.out.print("Password: ");
+        System.out.print("Password : ");
         String password = scanner.nextLine();
 
         boolean result = userService.register(email, name, password);
@@ -34,6 +34,5 @@ public class RegisterScreen implements Screen {
 
     @Override
     public void onInput(int input) {
-
     }
 }

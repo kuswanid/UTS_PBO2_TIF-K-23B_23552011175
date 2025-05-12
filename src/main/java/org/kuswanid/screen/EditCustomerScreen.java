@@ -36,7 +36,7 @@ public class EditCustomerScreen implements Screen {
 
         System.out.print("Address (" + customer.getAddress() + "): ");
         String newAddress = scanner.nextLine();
-        if(newAddress.isEmpty()) newAddress = customer.getAddress();
+        if (newAddress.isEmpty()) newAddress = customer.getAddress();
 
         boolean result = customerService.updateCustomer(id, newAddress, newEmail, newName, newPhone);
         if (result) {
@@ -49,6 +49,5 @@ public class EditCustomerScreen implements Screen {
 
     @Override
     public void onInput(int input) {
-
     }
 }

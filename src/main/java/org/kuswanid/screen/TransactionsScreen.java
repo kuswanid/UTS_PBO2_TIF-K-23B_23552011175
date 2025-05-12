@@ -33,9 +33,9 @@ public class TransactionsScreen implements Screen {
             Property property = propertyService.getPropertyDetail(transactions.get(i).getPropertyId());
 
             System.out.println(i + 1 + ". " + property.getName());
-            System.out.println("   Customer: " + customer.getName());
-            System.out.println("   Rp" + new DecimalFormat("#").format(transactions.get(i).getTotalPrice()));
-            System.out.println("   Status: " + transactions.get(i).getStatus());
+            System.out.println("   Customer : " + customer.getName());
+            System.out.println("   Price    : Rp" + new DecimalFormat("#").format(transactions.get(i).getTotalPrice()));
+            System.out.println("   Status   : " + transactions.get(i).getStatus());
             System.out.println();
         }
 

@@ -19,15 +19,15 @@ public class PropertyDetailScreen implements Screen {
 
         Property property = propertyService.getPropertyDetail(id);
 
-        System.out.println(property.getName());
-        System.out.println(property.getType());
-        System.out.println(property.getAddress());
-        System.out.println(property.getArea());
-        System.out.println(property.getPrice());
+        System.out.println("Name      : " + property.getName());
+        System.out.println("Type      : " + property.getType());
+        System.out.println("Address   : " + property.getAddress());
+        System.out.println("Area      : " + property.getArea() + " m²");
+        System.out.println("Price/day : Rp" + property.getPrice());
         if (property.isAvailable()) {
-            System.out.println("available");
+            System.out.println("Status    : available");
         } else {
-            System.out.println("not available");
+            System.out.println("Status    : not available");
         }
 
         System.out.println();

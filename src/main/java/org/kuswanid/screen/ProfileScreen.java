@@ -14,8 +14,8 @@ public class ProfileScreen implements Screen {
 
         User user = userService.getCurrentUser();
 
-        System.out.println(user.getName());
-        System.out.println(user.getEmail());
+        System.out.println("Name  : " + user.getName());
+        System.out.println("Email : " + user.getEmail());
 
         System.out.println();
         System.out.println("0. Back");

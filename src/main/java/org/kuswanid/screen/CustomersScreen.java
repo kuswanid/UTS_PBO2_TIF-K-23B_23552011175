@@ -17,13 +17,14 @@ public class CustomersScreen implements Screen {
 
         customers = customerService.getAllCustomers();
 
-        if(customers.isEmpty()) {
+        if (customers.isEmpty()) {
             System.out.println("No customers data");
             System.out.println();
         }
         for (int i = 0; i < customers.size(); i++) {
             System.out.println(i + 1 + ". " + customers.get(i).getName());
-            System.out.println("   " + customers.get(i).getEmail());
+            System.out.println("   Email : " + customers.get(i).getEmail());
+            System.out.println("   Phone : " + customers.get(i).getPhone());
             System.out.println();
         }
 

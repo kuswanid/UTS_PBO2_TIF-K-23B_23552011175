@@ -46,7 +46,8 @@ public class HomeScreen implements Screen {
             }
             default: {
                 System.out.println("Invalid input");
-            };
+            }
+            ;
         }
     }
 }

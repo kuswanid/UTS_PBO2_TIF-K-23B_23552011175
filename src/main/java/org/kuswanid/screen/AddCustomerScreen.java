@@ -14,13 +14,13 @@ public class AddCustomerScreen implements Screen {
     public void render() {
         System.out.println("=== Add Customer ===");
 
-        System.out.print("Name: ");
+        System.out.print("Name    : ");
         String name = scanner.nextLine();
-        System.out.print("Email: ");
+        System.out.print("Email   : ");
         String email = scanner.nextLine();
-        System.out.print("Phone: ");
+        System.out.print("Phone   : ");
         String phone = scanner.nextLine();
-        System.out.print("Address: ");
+        System.out.print("Address : ");
         String address = scanner.nextLine();
 
         boolean result = customerService.addCustomer(address, email, name, phone);
@@ -34,6 +34,5 @@ public class AddCustomerScreen implements Screen {
 
     @Override
     public void onInput(int input) {
-
     }
 }

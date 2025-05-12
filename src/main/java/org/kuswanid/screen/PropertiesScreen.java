@@ -15,7 +15,7 @@ public class PropertiesScreen implements Screen {
     public void render() {
         System.out.println("=== Properties ===");
 
-        properties  = propertyService.getAllProperties();
+        properties = propertyService.getAllProperties();
 
         if (properties.isEmpty()) {
             System.out.println("No properties data");
@@ -23,9 +23,9 @@ public class PropertiesScreen implements Screen {
         }
         for (int i = 0; i < properties.size(); i++) {
             System.out.println(i + 1 + ". " + properties.get(i).getName());
-            System.out.println("   " + properties.get(i).getType());
-            System.out.println("   " + properties.get(i).getAddress());
-            System.out.println("   Rp" + properties.get(i).getPrice());
+            System.out.println("   Type      : " + properties.get(i).getType());
+            System.out.println("   Address   : " + properties.get(i).getAddress());
+            System.out.println("   Price/day : Rp" + properties.get(i).getPrice());
             System.out.println();
         }
 
